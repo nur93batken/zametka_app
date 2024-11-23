@@ -1,0 +1,23 @@
+ListTile(
+                              title: Text(note.title),
+                              subtitle: Text(note.content),
+                              onTap: () async {
+                                // Переход на экран редактирования
+                                await Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) =>
+                                        NoteEditScreen(noteId: note.id),
+                                  ),
+                                );
+                                _refreshNotes(); // Обновляем данные после возврата
+                              },
+                              trailing: IconButton(
+                                icon: const Icon(Icons.delete),
+                                onPressed: () async {
+                                  // Удаляем заметку и обновляем данные
+                                  _refreshNotes();
+                                  await notesProvider.deleteNote(note.id);
+                                },
+                              ),
+                            );

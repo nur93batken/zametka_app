@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "306465152534",
+    "project_id": "zametka-app",
+    "storage_bucket": "zametka-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306465152534:android:cd9e708a4b5cb165d3df37",
+        "android_client_info": {
+          "package_name": "com.example.zametka_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKPnekdjX5hIwbekDYHDcR5bHVYM3U3aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
